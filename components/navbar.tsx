@@ -9,11 +9,11 @@ export const revalidate = 0;
 const Navbar = async () => {
   const categories = await getCategories();
   return (
-    <div className="border-b bg-pink-200">
+    <div className="border-b bg-gradient-to-r from-violet-200 to-pink-200">
       <Container>
         <div className='relative px-4 sm:px-6 lg:px-8 flex h-16 items-center'>
           <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
-            <p className="font-extrabold text-3xl">STORE</p>
+            <p className="font-extrabold text-3xl">SHOPLIFY</p>
           </Link>
           <MainNav data={categories}/>
           <NavbarActions />
